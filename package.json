@@ -1,15 +1,15 @@
 {
   "name": "shower-ribbon",
   "description": "Ribbon theme for Shower HTML presentation engine",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Vadim Makeev",
     "url": "http://pepelsbey.com/"
   },
   "homepage": "http://shwr.me/",
   "repository": {
-  	"type": "git",
-  	"url": "git://github.com/shower/ribbon.git"
+    "type": "git",
+    "url": "git://github.com/shower/ribbon.git"
   },
   "bugs": {
     "url": "http://github.com/shower/shower/issues"
