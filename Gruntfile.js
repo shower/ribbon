@@ -1,5 +1,7 @@
 module.exports = function(grunt) {
 
+	require('load-grunt-tasks')(grunt);
+
 	grunt.initConfig({
 		sass: {
 			compile: {
@@ -30,11 +32,6 @@ module.exports = function(grunt) {
 			}
 		}
 	});
-
-	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks('grunt-autoprefixer');
-	grunt.loadNpmTasks('grunt-csso');
-	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	grunt.registerTask('default', ['sass', 'autoprefixer', 'csso']);
 
