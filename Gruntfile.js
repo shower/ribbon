@@ -5,31 +5,38 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		sass: {
-			compile: {
+			task: {
 				files: {
 					'styles/screen.css': 'styles/screen.scss'
 				}
 			}
 		},
 		autoprefixer: {
-			prefix: {
+			task: {
 				src: 'styles/screen.css'
 			}
 		},
-		csso: {
-			minify: {
+		cssshrink: {
+			shrink: {
 				files: {
-					'styles/screen.css' : 'styles/screen.css'
-				},
+					'styles/screen.css': 'styles/screen.css'
+				}
+			}
+		},
+		usebanner: {
+			task: {
 				options: {
-					banner: '/**\n * <%= pkg.description %>\n * <%= pkg.name %> v<%= pkg.version %>, <%= pkg.homepage %>\n * Copyright © 2010–<%= grunt.template.today("yyyy") %> Vadim Makeev, http://pepelsbey.net\n * Licensed under MIT license: github.com/shower/shower/wiki/MIT-License\n */\n'
+					banner: '/**\n * <%= pkg.description %>\n * <%= pkg.name %> v<%= pkg.version %>, <%= pkg.homepage %>\n * Copyright © 2010–<%= grunt.template.today("yyyy") %> Vadim Makeev, http://pepelsbey.net\n * Licensed under MIT license: <%= pkg.licenses[0].url %>\n */'
+				},
+				files: {
+					'styles/screen.css': 'styles/screen.css'
 				}
 			}
 		},
 		watch: {
-			styles: {
+			task: {
 				files: 'styles/*.scss',
-				tasks: ['sass', 'autoprefixer', 'csso']
+				tasks: ['sass', 'autoprefixer', 'cssshrink', 'usebanner']
 			}
 		},
 		bump: {
@@ -41,6 +48,6 @@ module.exports = function(grunt) {
 		}
 	});
 
-	grunt.registerTask('default', ['sass', 'autoprefixer', 'csso']);
+	grunt.registerTask('default', ['sass', 'autoprefixer', 'cssshrink', 'usebanner']);
 
 };

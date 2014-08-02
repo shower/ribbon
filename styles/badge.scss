@@ -1,0 +1,38 @@
+// Ribbon theme for Shower HTML presentation engine
+// shower-ribbon v1.1.0, https://github.com/shower/ribbon
+// Copyright © 2010–2014 Vadim Makeev, http://pepelsbey.net
+// Licensed under MIT license: https://github.com/shower/shower/wiki/MIT-License
+
+&__badge {
+
+	position:absolute;
+	top:0;
+	right:0;
+	overflow:hidden;
+	visibility:hidden;
+	width:11em;
+	height:11em;
+	line-height:2.5;
+	font-size:0.2em;
+
+	// Link
+
+	a {
+		position:absolute;
+		bottom:50%;
+		right:-50%;
+		left:-50%;
+		visibility:visible;
+		background:$blue;
+		box-shadow:0 0 1em rgba(#000, 0.3);
+		color:#FFF;
+		text-decoration:none;
+		text-align:center;
+		transform-origin:50% 100%;
+		transform:rotate(45deg) translateY(-1em);
+		&:hover {
+			background:lighten($blue, 3%);
+			}
+		}
+
+	}

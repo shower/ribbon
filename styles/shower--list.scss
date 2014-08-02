@@ -1,0 +1,23 @@
+// Ribbon theme for Shower HTML presentation engine
+// shower-ribbon v1.1.0, https://github.com/shower/ribbon
+// Copyright © 2010–2014 Vadim Makeev, http://pepelsbey.net
+// Licensed under MIT license: https://github.com/shower/shower/wiki/MIT-License
+
+&--list {
+
+	@include clear;
+
+	background:#585A5E url(../images/linen.png);
+
+	@include retina {
+		background-image:url(../images/linen@2x.png);
+		background-size:256px;
+		}
+
+	@import 'caption--list';
+	@import 'badge--list';
+	@import 'progress--list';
+
+	@import 'section--list';
+
+	}

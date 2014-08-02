@@ -3,8 +3,23 @@
 // Copyright © 2010–2014 Vadim Makeev, http://pepelsbey.net
 // Licensed under MIT license: https://github.com/shower/shower/wiki/MIT-License
 
-@import 'defaults';
-@import 'fonts';
-@import 'reset';
-@import 'shower';
-@import 'print';
+> section {
+
+	position:fixed;
+	top:50%;
+	left:50%;
+	margin:0;
+	box-shadow:0 0 0 50vmax #000;
+	transform:translate(-50%, -50%);
+
+	&:target {
+		z-index:2;
+		}
+
+	// Footer
+
+	> footer {
+		display:none;
+		}
+
+	}

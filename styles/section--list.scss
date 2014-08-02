@@ -1,0 +1,35 @@
+// Ribbon theme for Shower HTML presentation engine
+// shower-ribbon v1.1.0, https://github.com/shower/ribbon
+// Copyright © 2010–2014 Vadim Makeev, http://pepelsbey.net
+// Licensed under MIT license: https://github.com/shower/shower/wiki/MIT-License
+
+> section {
+
+	float:left;
+	// margin:0 0 $gap $gap;
+	// transform-origin:0 0;
+
+	// @each $scale in 2, 4 {
+	// 	@media (max-width:$width / ($scale / 2) * 2 + $gap * 3) {
+	// 		transform:scale(1 / $scale);
+	// 		margin:0 (0 - $width * (1 - 1 / $scale)) ($gap - $height * (1 - 1 / $scale)) $gap;
+	// 		}
+	// 	}
+
+	// Footer
+
+	> footer {
+		position:absolute;
+		right:0;
+		bottom:- $height;
+		left:0;
+		padding:25px 100px;
+		background:$yellow;
+		box-shadow:0 1px 0 rgba(#000, 0.05) inset;
+		transition:bottom 0.3s;
+		}
+	&:hover > footer {
+		bottom:0;
+		}
+
+	}
