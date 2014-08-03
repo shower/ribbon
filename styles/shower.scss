@@ -1,21 +1,15 @@
-// Ribbon theme for Shower HTML presentation engine
-// shower-ribbon v1.1.0, https://github.com/shower/ribbon
-// Copyright © 2010–2014 Vadim Makeev, http://pepelsbey.net
-// Licensed under MIT license: https://github.com/shower/shower/wiki/MIT-License
+// -------------------------------
+// Shower
+// -------------------------------
 
 .shower {
 
-	padding:0.5em 0 0.6em 0.6em;
 	counter-reset:slide;
-	font:10vw/2 PT Sans, sans-serif;
-
-	@media (min-width:800px) {
-		font-size:80px;
-		}
+	font:25px/2 PT Sans, sans-serif;
 
 	a {
-		color:$blue;
 		@include underline(currentColor, 0.09);
+		color:$blue;
 		text-decoration:none;
 		}
 

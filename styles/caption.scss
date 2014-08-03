@@ -1,25 +1,43 @@
-// Ribbon theme for Shower HTML presentation engine
-// shower-ribbon v1.1.0, https://github.com/shower/ribbon
-// Copyright © 2010–2014 Vadim Makeev, http://pepelsbey.net
-// Licensed under MIT license: https://github.com/shower/shower/wiki/MIT-License
+// -------------------------------
+// Caption
+// -------------------------------
 
 .shower__caption {
 
-	padding-bottom:0.4em;
-	text-shadow:0 1px 1px #8D8E90;
-	font-size:1em;
+	@mixin scale-padding($scale) {
+		padding:($gap / $scale) 0 ($gap / $scale * 1.125) ($gap / $scale);
+		}
+
+	@include scale-padding(4);
+
+	text-shadow:0 1px 0 #8D8E90;
+	font-size:20px;
 	color:#3C3D40;
+
+	@include breakpoint(575px) {
+		font-size:25px;
+		}
+	@include scale-breakpoint(2) {
+		@include scale-padding(2);
+		font-size:30px;
+		}
+	@include scale-breakpoint(1) {
+		@include scale-padding(1);
+		font-size:50px;
+		}
 
 	// Contents
 
 	h1 {
-		font:bold 1em/1 PT Sans Narrow, sans-serif;
+		margin-bottom:0.25em;
+		font:bold 2em/1 PT Sans Narrow, sans-serif;
 		}
 	p {
-		font-size:0.5em;
+		line-height:1;
+		font-size:1em;
 		}
 	a {
-		text-shadow:0 -1px 1px #1F3F60;
+		text-shadow:0 -1px 0 #1F3F60;
 		background:none;
 		&:hover {
 			color:lighten($blue, 5%);

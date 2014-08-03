@@ -1,10 +1,9 @@
-// Ribbon theme for Shower HTML presentation engine
-// shower-ribbon v1.1.0, https://github.com/shower/ribbon
-// Copyright © 2010–2014 Vadim Makeev, http://pepelsbey.net
-// Licensed under MIT license: https://github.com/shower/shower/wiki/MIT-License
+// -------------------------------
+// Defaults
+// -------------------------------
 
 $ratio:16/10;
-$width:1024px;
+$width:1000px;
 $height:$width/$ratio;
 $gap:100px;
 
@@ -27,7 +26,7 @@ $yellow:#FAFAA2;
 			transparent
 		) repeat-x;
 	}
-@mixin clear {
+@mixin clearfix {
 	&:before,
 	&:after {
 		display:block;
@@ -35,5 +34,10 @@ $yellow:#FAFAA2;
 		}
 	&:after {
 		clear:both;
+		}
+	}
+@mixin scale-breakpoint($scale) {
+	@include breakpoint(2 * ($width / $scale) + ($gap / $scale) * 3) {
+		@content;
 		}
 	}
