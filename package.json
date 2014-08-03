@@ -31,8 +31,9 @@
     "grunt-autoprefixer": "^0.8.2",
     "grunt-banner": "^0.2.3",
     "grunt-bump": "0.0.15",
+    "grunt-contrib-connect": "^0.8.0",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-cssshrink": "0.0.7",
+    "grunt-csso": "^0.6.3",
     "grunt-sass": "^0.14.0",
     "load-grunt-tasks": "^0.6.0"
   }

@@ -16,8 +16,8 @@ module.exports = function(grunt) {
 				src: 'styles/screen.css'
 			}
 		},
-		cssshrink: {
-			shrink: {
+		csso: {
+			task: {
 				files: {
 					'styles/screen.css': 'styles/screen.css'
 				}
@@ -33,10 +33,32 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		watch: {
+		connect: {
 			task: {
+				options: {
+					livereload: true,
+					open: {
+						target: 'http://localhost:8000'
+					}
+				}
+			}
+		},
+		watch: {
+			styles: {
 				files: 'styles/*.scss',
-				tasks: ['sass', 'autoprefixer', 'cssshrink', 'usebanner']
+				tasks: 'styles'
+			},
+			livereload: {
+				options: {
+					livereload: true
+				},
+				files: [
+					'fonts/*',
+					'images/*',
+					'pictures/*',
+					'styles/screen.css',
+					'index.html'
+				]
 			}
 		},
 		bump: {
@@ -48,6 +70,17 @@ module.exports = function(grunt) {
 		}
 	});
 
-	grunt.registerTask('default', ['sass', 'autoprefixer', 'cssshrink', 'usebanner']);
+	grunt.registerTask('styles', [
+		'sass',
+		'autoprefixer',
+		'csso',
+		'usebanner'
+	]);
+
+	grunt.registerTask('default', [
+		'styles',
+		'connect',
+		'watch'
+	]);
 
 };
