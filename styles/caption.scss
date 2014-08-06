@@ -5,18 +5,16 @@
 .shower__caption {
 
 	@mixin scale-padding($scale) {
-		padding:($gap / $scale) 0 ($gap / $scale * 1.125) ($gap / $scale);
+		padding:($gap / $scale) ($gap / $scale * 2) ($gap / $scale * 1.125) ($gap / $scale);
 		}
 
 	@include scale-padding(4);
 
+	width:100%;
 	text-shadow:0 1px 0 #8D8E90;
 	font-size:20px;
 	color:#3C3D40;
 
-	@include breakpoint(575px) {
-		font-size:25px;
-		}
 	@include scale-breakpoint(2) {
 		@include scale-padding(2);
 		font-size:30px;

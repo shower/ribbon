@@ -4,8 +4,8 @@
 
 &--list {
 
-	@include clearfix;
-
+	display:flex;
+	flex-wrap:wrap;
 	background:#585A5E url(../images/linen.png);
 
 	@include retina {
