@@ -7,7 +7,6 @@
 	display:flex;
 	flex-wrap:wrap;
 	background:#585A5E url(../images/linen.png);
-
 	@include retina {
 		background-image:url(../images/linen@2x.png);
 		background-size:256px;
@@ -16,7 +15,6 @@
 	@import 'caption--list';
 	@import 'badge--list';
 	@import 'progress--list';
-
 	@import 'section--list';
 
 	}
