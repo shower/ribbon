@@ -10,12 +10,8 @@
 	padding:115px 100px 0;
 	width:$width;
 	height:$height;
-	background:#FFF url(../images/grid.png);
+	background:#FFF;
 	font-size:25px;
-	@include retina {
-		background-image:url(../images/grid@2x.png);
-		background-size:25px;
-		}
 
 	// Number
 

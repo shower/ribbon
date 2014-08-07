@@ -1,0 +1,35 @@
+// -------------------------------
+// Section Types
+// -------------------------------
+
+> section {
+
+	// Grid
+
+	&.grid {
+		background-image:url(../images/grid.png);
+		@include retina {
+			background-image:url(../images/grid@2x.png);
+			background-size:25px;
+			}
+		}
+
+	// Black
+
+	&.black {
+		background-color:#000;
+		&:after {
+			visibility:hidden;
+			}
+		}
+
+	// White
+
+	&.white {
+		background-color:#FFF;
+		&:after {
+			visibility:hidden;
+			}
+		}
+
+	}
