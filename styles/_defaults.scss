@@ -3,13 +3,15 @@
 // -------------------------------
 
 $ratio:16/10;
-$width:1000px;
+$width:1024px;
 $height:$width/$ratio;
 $gap:100px;
 
 $blue:#4B86C2;
 $grey:#2A2B2D;
 $yellow:#FAFAA2;
+
+// Mixins
 
 @mixin retina {
 	@media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) {
