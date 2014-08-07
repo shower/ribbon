@@ -1,0 +1,17 @@
+// -------------------------------
+// Footer List
+// -------------------------------
+
+> footer {
+	position:absolute;
+	right:0;
+	bottom:- $height;
+	left:0;
+	padding:25px 100px;
+	background:$yellow;
+	box-shadow:0 1px 0 rgba(#000, 0.05) inset;
+	transition:bottom 0.3s;
+	}
+&:hover > footer {
+	bottom:0;
+	}
