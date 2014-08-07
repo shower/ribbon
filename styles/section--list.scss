@@ -4,20 +4,54 @@
 
 > section {
 
+	// Scale
+
 	transform-origin:0 0;
 
-	@mixin scale($scale) {
+	@mixin scale-section($scale) {
 		margin:0 (0 - $width * (1 - 1 / $scale)) ($gap / $scale - $height * (1 - 1 / $scale)) $gap / $scale;
 		transform:scale(1 / $scale);
 		}
 
-	@include scale(4);
+	@include scale-section(4);
+
+	// Breakpoints
 
 	@each $scale in 2, 1 {
 		@include scale-breakpoint($scale) {
-			@include scale($scale);
+			@include scale-section($scale);
 			}
 		}
+
+	// Shadow
+
+	border-radius:2px;
+	box-shadow:
+		0 20px 50px rgba($grey, 0.4);		// Shadow
+	&:hover {
+		box-shadow:
+			0 0 0 20px rgba($grey, 0.3),	// Grey outline
+			0 40px 50px rgba($grey, 0.6);	// Shadow
+		}
+	&:target {
+		box-shadow:
+			0 0 0 1px darken($blue, 10%),	// Thin blue outline
+			0 0 0 20px $blue,				// Thick blue outline
+			0 40px 50px rgba($grey, 0.6);	// Shadow
+		}
+
+	// Cover
+
+	&:before {
+		position:absolute;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		content:'';
+		}
+
+	// Footer
 
 	@import 'footer--list';
 
