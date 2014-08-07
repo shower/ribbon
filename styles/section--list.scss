@@ -27,17 +27,17 @@
 
 	border-radius:2px;
 	box-shadow:
-		0 20px 50px rgba($grey, 0.4);		// Shadow
+		0 20px 50px rgba(black, 0.3);
 	&:hover {
 		box-shadow:
-			0 0 0 20px rgba($grey, 0.3),	// Grey outline
-			0 40px 50px rgba($grey, 0.6);	// Shadow
+			0 0 0 20px rgba(black, 0.1),
+			0 20px 50px rgba(black, 0.3);
 		}
 	&:target {
 		box-shadow:
-			0 0 0 1px darken($blue, 10%),	// Thin blue outline
-			0 0 0 20px $blue,				// Thick blue outline
-			0 40px 50px rgba($grey, 0.6);	// Shadow
+			0 0 0 1px darken($blue, 10%),
+			0 0 0 20px $blue,
+			0 20px 50px rgba(black, 0.3);
 		}
 
 	// Cover
@@ -50,8 +50,6 @@
 		left:0;
 		content:'';
 		}
-
-	// Footer
 
 	@import 'footer--list';
 

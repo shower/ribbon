@@ -7,14 +7,15 @@
 	position:fixed;
 	top:50%;
 	left:50%;
-	margin:0;
+	visibility:hidden;
 	box-shadow:0 0 0 50vmax #000;
 	transform:translate(-50%, -50%);
 
 	&:target {
-		z-index:2;
+		visibility:visible;
 		}
 
+	@import 'content--full';
 	@import 'footer--full';
 
 	}
