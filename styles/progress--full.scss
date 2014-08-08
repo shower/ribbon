@@ -3,5 +3,28 @@
 // -------------------------------
 
 .shower__progress {
-	display:block;
+
+	position:absolute;
+	bottom:0;
+	left:-15px;
+	z-index:1;
+	height:15px;
+	background:$blue;
+	transition:width 0.2s linear;
+
+	&[style*='100%'] {
+		left:0;
+		}
+
+	&:after {
+		position:absolute;
+		top:0;
+		right:-30px;
+		width:0;
+		height:0;
+		border:15px solid transparent;
+		border-left-color:$blue;
+		content:'';
+		}
+
 	}

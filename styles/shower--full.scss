@@ -4,6 +4,8 @@
 
 &--full {
 
+	overflow:hidden;
+
 	@import 'caption--full';
 	@import 'badge--full';
 	@import 'progress--full';
