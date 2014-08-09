@@ -4,9 +4,13 @@
 
 .shower {
 
-	padding:0 0 7px 7px;
 	counter-reset:slide;
 	font:25px/2 PT Sans, sans-serif;
+
+	-webkit-print-color-adjust:exact;
+	-webkit-text-size-adjust:none;
+	-moz-text-size-adjust:none;
+	-ms-text-size-adjust:none;
 
 	a {
 		@include underline(currentColor, 0.09);
@@ -14,6 +18,9 @@
 		text-decoration:none;
 		}
 
+	@import 'caption';
+	@import 'badge';
+	@import 'progress';
 	@import 'section';
 	@import 'section--types';
 
@@ -22,6 +29,12 @@
 	@media screen {
 		@import 'shower--list';
 		@import 'shower--full';
+		}
+
+	// Print
+
+	@media print {
+		text-rendering:geometricPrecision;
 		}
 
 	}

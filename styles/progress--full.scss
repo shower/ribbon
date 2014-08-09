@@ -5,26 +5,20 @@
 .shower__progress {
 
 	position:absolute;
+	left:-30px;
 	bottom:0;
-	left:-15px;
 	z-index:1;
-	height:15px;
-	background:$blue;
+	display:block;
+	width:0;
+	height:0;
+	box-sizing:content-box;
+	border:15px solid $blue;
+	border-right-color:transparent;
 	transition:width 0.2s linear;
+	clip:rect(15px, $width+30px, 30px, 30px);
 
 	&[style*='100%'] {
-		left:0;
-		}
-
-	&:after {
-		position:absolute;
-		top:0;
-		right:-30px;
-		width:0;
-		height:0;
-		border:15px solid transparent;
-		border-left-color:$blue;
-		content:'';
+		padding-left:15px;
 		}
 
 	}

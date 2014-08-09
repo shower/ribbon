@@ -4,8 +4,10 @@
 
 &--list {
 
+	padding:0 0 7px 7px;
 	display:flex;
 	flex-wrap:wrap;
+
 	background:#585A5E url(../images/linen.png);
 	@include retina {
 		background-image:url(../images/linen@2x.png);
@@ -14,7 +16,6 @@
 
 	@import 'caption--list';
 	@import 'badge--list';
-	@import 'progress--list';
 	@import 'section--list';
 
 	}

@@ -2,6 +2,8 @@
 // Fonts
 // -------------------------------
 
+// PT Sans
+
 @font-face {
 	font-family:PT Sans;
 	src:url(../fonts/pt-sans-regular.woff) format('woff');
@@ -22,11 +24,17 @@
 	font-family:PT Sans;
 	src:url(../fonts/pt-sans-bold-italic.woff) format('woff');
 	}
+
+// PT Narrow
+
 @font-face {
 	font-family:PT Sans Narrow;
 	font-weight:bold;
 	src:url(../fonts/pt-sans-narrow-bold.woff) format('woff');
 	}
+
+// PT Mono
+
 @font-face {
 	font-family:PT Mono;
 	src:url(../fonts/pt-mono-regular.woff) format('woff');

@@ -4,18 +4,17 @@
 
 > section {
 
-	position:fixed;
-	top:50%;
-	left:50%;
+	position:absolute;
+	top:0;
+	left:0;
+	margin-left:150%;
 	visibility:hidden;
-	box-shadow:0 0 0 50vmax #000;
-	transform:translate(-50%, -50%);
 
 	&:target {
+		margin:0;
 		visibility:visible;
 		}
 
 	@import 'content--full';
-	@import 'footer--full';
 
 	}

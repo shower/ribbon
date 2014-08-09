@@ -11,13 +11,16 @@ $blue:#4B86C2;
 $yellow:#FAFAA2;
 $grey:#585A5E;
 
-// Mixins
+// Retina detection
 
 @mixin retina {
 	@media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) {
 		@content;
 		}
 	}
+
+// Underliner
+
 @mixin underline($color, $width) {
 	background:
 		linear-gradient(
@@ -28,6 +31,9 @@ $grey:#585A5E;
 			transparent
 		) repeat-x;
 	}
+
+// MQ for scaled breakpoints
+
 @mixin scale-breakpoint($scale) {
 	@include breakpoint(2 * ($width / $scale) + ($gap / $scale) * 3) {
 		@content;

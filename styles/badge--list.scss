@@ -7,6 +7,7 @@
 	position:absolute;
 	top:0;
 	right:0;
+	display:block;
 	overflow:hidden;
 	visibility:hidden;
 	width:11em;
@@ -21,6 +22,7 @@
 	// Link
 
 	a {
+
 		position:absolute;
 		bottom:50%;
 		right:-50%;
@@ -33,9 +35,11 @@
 		text-align:center;
 		transform-origin:50% 100%;
 		transform:rotate(45deg) translateY(-1em);
+
 		&:hover {
 			background:lighten($blue, 3%);
 			}
+
 		}
 
 	}
