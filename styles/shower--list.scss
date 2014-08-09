@@ -18,4 +18,9 @@
 	@import 'badge--list';
 	@import 'section--list';
 
+	// For IE10-11 only
+
+	position:absolute;
+	clip:rect(0, auto, auto, 0);
+
 	}
