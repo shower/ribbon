@@ -4,21 +4,23 @@
 
 .shower__progress {
 
+	$size:10px;
+
 	position:absolute;
-	left:-30px;
+	left:- $size * 2;
 	bottom:0;
 	z-index:1;
 	display:block;
 	width:0;
 	height:0;
 	box-sizing:content-box;
-	border:15px solid $blue;
+	border:$size solid $blue;
 	border-right-color:transparent;
 	transition:width 0.2s linear;
-	clip:rect(15px, $width+30px, 30px, 30px);
+	clip:rect($size, $width + $size * 2, $size * 2, $size * 2);
 
 	&[style*='100%'] {
-		padding-left:15px;
+		padding-left:$size;
 		}
 
 	}
