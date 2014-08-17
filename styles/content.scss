@@ -39,7 +39,7 @@ code, kbd, mark, samp {
 	border-radius:0.4em;
 	}
 kbd, code, samp {
-	background:rgba(#000, 0.07);
+	background:rgba($grey, 0.15);
 	color:#000;
 	line-height:1;
 	font-family:PT Mono, monospace, monospace;
@@ -201,7 +201,7 @@ table {
 
 	&.striped {
 		tr:nth-child(even) {
-			background:rgba($grey, 0.1);
+			background:rgba($grey, 0.15);
 			}
 		}
 
