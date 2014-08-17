@@ -1,6 +1,6 @@
-// -------------------------------
+// ------------------------------------------------------------------
 // Caption List
-// -------------------------------
+// ------------------------------------------------------------------
 
 .shower__caption {
 
@@ -10,14 +10,14 @@
 	font-size:20px;
 	color:#3C3D40;
 
+	// Breakpoints
+
 	@mixin scale-padding($scale) {
 		$scaled-gap:$gap / $scale;
 		padding:$scaled-gap ($scaled-gap * 2) ($scaled-gap * 1.125) $scaled-gap;
 		}
 
 	@include scale-padding(4);
-
-	// Breakpoints
 
 	@include scale-breakpoint(2) {
 		@include scale-padding(2);

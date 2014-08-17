@@ -1,6 +1,6 @@
-// -------------------------------
+// ------------------------------------------------------------------
 // Progress Full
-// -------------------------------
+// ------------------------------------------------------------------
 
 .shower__progress {
 
@@ -18,6 +18,8 @@
 	border-right-color:transparent;
 	transition:width 0.2s linear;
 	clip:rect($size, $width + $size * 2, $size * 2, $size * 2);
+
+	// Hiding corner
 
 	&[style*='100%'] {
 		padding-left:$size;

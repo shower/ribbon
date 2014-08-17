@@ -1,6 +1,13 @@
-// -------------------------------
+// ------------------------------------------------------------------
 // Defaults
-// -------------------------------
+// ------------------------------------------------------------------
+// 1. Variables ........ Global layout and color variables
+// 2. Retina ........... Retina detection mixin
+// 3. Underliner ....... Mixin for underlining links with gradient
+// 4. Breakpoints ...... MQ generator based on slides scale factor
+// ------------------------------------------------------------------
+
+// Variables
 
 $ratio:16/10; // Use 4/3 for 1024 × 768
 $width:1024px;
@@ -11,7 +18,7 @@ $blue:#4B86C2;
 $yellow:#FAFAA2;
 $grey:#585A5E;
 
-// Retina detection
+// Retina
 
 @mixin retina {
 	@media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) {
@@ -32,7 +39,7 @@ $grey:#585A5E;
 		) repeat-x;
 	}
 
-// MQ for scaled breakpoints
+// Breakpoints
 
 @mixin scale-breakpoint($scale) {
 	@include breakpoint(2 * ($width / $scale) + ($gap / $scale) * 3) {

@@ -1,6 +1,18 @@
-// -------------------------------
+// ------------------------------------------------------------------
 // Content
-// -------------------------------
+// ------------------------------------------------------------------
+// 1. Basic ............ Heading, paragraphs
+// 2. Inline ........... Inline text elements
+// 3. Quote ............ Blockquote with optional author
+// 4. Lists ............ Ordered and unordered lists
+// 5. Code ............. Numbered or numberless code blocks
+// 6. Table ............ Tables with optional striped rows
+// 7. Shout ............ Large isolated headings
+// 8. Cover ............ Background cover with optional watermark
+// 9. Place ............ Positioning system
+// ------------------------------------------------------------------
+
+// Basic
 
 h2 {
 	margin-bottom:34px;
@@ -9,9 +21,42 @@ h2 {
 	}
 p {
 	margin-bottom:1em;
+	&.note {
+		color:lighten($grey, 25%);
+		}
 	}
-p.note {
-	color:lighten($grey, 25%);
+
+// Inline
+
+b, strong {
+	font-weight:bold;
+	}
+i, em, dfn {
+	font-style:italic;
+	}
+code, kbd, mark, samp {
+	padding:0.1em 0.3em;
+	border-radius:0.4em;
+	}
+kbd, code, samp {
+	background:rgba(#000, 0.07);
+	color:#000;
+	line-height:1;
+	font-family:PT Mono, monospace, monospace;
+	}
+mark {
+	background:$yellow;
+	}
+sub, sup {
+	position: relative;
+	line-height:0;
+	font-size:75%;
+	}
+sub {
+	bottom:-0.25em;
+	}
+sup {
+	top:-0.5em;
 	}
 
 // Quote
@@ -50,6 +95,8 @@ ol, ul {
 
 		text-indent:-2em;
 
+		// Marker
+
 		&:before {
 			display:inline-block;
 			width:2em;
@@ -67,17 +114,20 @@ ol, ul {
 	}
 
 ul > li:before {
-	content:'\2022\00A0\00A0'; // Bullet
+	// Bullet
+	content:'\2022\00A0\00A0';
 	}
 ul > li:lang(ru):before {
-	content:'\2014\00A0\00A0'; // Dash
+	// Mdash
+	content:'\2014\00A0\00A0';
 	}
 ol > li:before {
+	// Number
 	counter-increment:list;
-	content:counter(list)'.\00A0'; // Number
+	content:counter(list)'.\00A0';
 	}
 
-// Pre
+// Code
 
 pre {
 
@@ -112,6 +162,8 @@ pre {
 
 		}
 
+	// Marked
+
 	mark {
 
 		&.important {
@@ -132,7 +184,7 @@ pre {
 
 table {
 
-	margin:0 0 1em;
+	margin-bottom:1em;
 	width:100%;
 	border-collapse:collapse;
 	border-spacing:0;
@@ -153,39 +205,6 @@ table {
 			}
 		}
 
-	}
-
-// Inline
-
-b, strong {
-	font-weight:bold;
-	}
-i, em, dfn {
-	font-style:italic;
-	}
-code, kbd, mark, samp {
-	padding:0.1em 0.3em;
-	border-radius:0.4em;
-	}
-kbd, code, samp {
-	background:rgba(#000, 0.07);
-	color:#000;
-	line-height:1;
-	font-family:PT Mono, monospace, monospace;
-	}
-mark {
-	background:$yellow;
-	}
-sub, sup {
-	position: relative;
-	line-height:0;
-	font-size:75%;
-	}
-sub {
-	bottom:-0.25em;
-	}
-sup {
-	top:-0.5em;
 	}
 
 // Shout
@@ -219,27 +238,30 @@ sup {
 	max-width:100%;
 	max-height:100%;
 
+	// Fitting
+
 	&.width, &.w {
 		width:100%;
 		max-height:none;
 		}
-
 	&.height, &.h {
 		height:100%;
 		max-width:none;
 		}
 
+	// Watermark
+
 	& + figcaption {
 
 		position:absolute;
-		bottom:22px;
-		right:14px;
+		bottom:20px;
+		right:10px;
 		font-size:12px;
 		opacity:0.7;
 		transform-origin:0 100%;
 		transform:translateX(100%) rotate(-90deg);
 
-		// White color
+		// White
 
 		&.white {
 			color:#FFF;
