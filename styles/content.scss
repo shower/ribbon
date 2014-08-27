@@ -1,15 +1,16 @@
 // ------------------------------------------------------------------
 // Content
 // ------------------------------------------------------------------
-// 1. Basic ............ Heading, paragraphs
-// 2. Inline ........... Inline text elements
-// 3. Quote ............ Blockquote with optional author
-// 4. Lists ............ Ordered and unordered lists
-// 5. Table ............ Tables with optional striped rows
-// 6. Code ............. Numbered or numberless code blocks
-// 7. Shout ............ Large isolated headings
-// 8. Cover ............ Background cover with optional watermark
-// 9. Place ............ Positioning system
+//  1. Basic ........... Heading, paragraphs
+//  2. Inline .......... Inline text elements
+//  3. Quote ........... Blockquote with optional author
+//  4. Lists ........... Ordered and unordered lists
+//  5. Table ........... Tables with optional striped rows
+//  6. Code ............ Numbered or numberless code blocks
+//  7. Double .......... Two-column content division
+//  8. Shout ........... Large isolated headings
+//  9. Cover ........... Background cover with optional watermark
+// 10. Place ........... Positioning system
 // ------------------------------------------------------------------
 
 // Basic
@@ -212,6 +213,13 @@ pre {
 
 		}
 
+	}
+
+// Double
+
+.double {
+	columns:2;
+	column-gap:75px;
 	}
 
 // Shout
