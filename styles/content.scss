@@ -94,6 +94,7 @@ ol, ul {
 
 	li {
 
+		page-break-inside:avoid;
 		text-indent:-2em;
 
 		// Marker
