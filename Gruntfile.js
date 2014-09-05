@@ -50,7 +50,7 @@ module.exports = function(grunt) {
 			},
 			livereload: {
 				options: {
-					livereload: 0
+					livereload: true
 				},
 				files: [
 					'fonts/*',
