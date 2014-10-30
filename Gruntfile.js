@@ -36,7 +36,7 @@ module.exports = function(grunt) {
 		connect: {
 			task: {
 				options: {
-					base: ['../shower-core', '.'],
+					base: ['../core', '.'],
 					port: 0,
 					livereload: true,
 					open: true
