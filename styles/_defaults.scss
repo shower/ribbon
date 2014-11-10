@@ -13,7 +13,7 @@
 $ratio:16/10; // Use 4/3 for 1024 × 768
 $width:1024px;
 $height:$width/$ratio;
-$gap:100px;
+$gap:100px; // Gap between slides in list mode
 
 $blue:#4B86C2;
 $yellow:#FAFAA2;
