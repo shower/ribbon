@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 				src: 'styles/screen.css'
 			}
 		},
-		csso: {
+		cssmin: {
 			task: {
 				files: {
 					'styles/screen.css': 'styles/screen.css'
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('styles', [
 		'sass',
 		'autoprefixer',
-		'csso',
+		'cssmin',
 		'usebanner'
 	]);
 
