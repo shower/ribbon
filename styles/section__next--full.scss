@@ -1,23 +1,12 @@
 // ------------------------------------------------------------------
-// Section Full
+// Content: Next Full
 // ------------------------------------------------------------------
 
-> section {
+.next {
 
-	position:absolute;
-	top:0;
-	left:0;
-	margin-left:150%;
 	visibility:hidden;
-
-	&:target {
-		margin:0;
+	&.active {
 		visibility:visible;
 		}
-
-	// Elements
-
-	@import 'section__next--full';
-	@import 'section__shout--full';
 
 	}

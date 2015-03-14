@@ -1,0 +1,35 @@
+// ------------------------------------------------------------------
+// Content: Table
+// ------------------------------------------------------------------
+
+table {
+
+	margin-bottom:1em;
+	width:100%;
+	border-collapse:collapse;
+	border-spacing:0;
+
+	tr:not(:last-of-type) {
+		> * {
+			@include underline(rgba($grey, 0.5), 0.055);
+			}
+		}
+	th {
+		text-align:left;
+		font-weight:bold;
+		}
+
+	// Striped
+
+	&.striped {
+		tr {
+			&:nth-child(even) {
+				background:rgba($grey, 0.15);
+				}
+			> * {
+				background-image:none;
+				}
+			}
+		}
+
+	}

@@ -10,9 +10,9 @@
 
 // Variables
 
-$ratio:16/10; // Use 4/3 for 1024 × 768
-$width:1024px;
-$height:$width/$ratio;
+$ratio:16/10; // Slide ratio, use 4/3 for 1024 × 768
+$width:1024px; // Default slide width
+$height:$width/$ratio; // Slide height based on ratio
 $gap:100px; // Gap between slides in list mode
 
 $blue:#4B86C2;

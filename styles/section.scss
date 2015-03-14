@@ -29,7 +29,24 @@
 		text-align:center;
 		}
 
-	@import 'content';
-	@import 'footer';
+	// Elements
+
+	@import 'section__basic';
+	@import 'section__inline';
+	@import 'section__quote';
+	@import 'section__lists';
+	@import 'section__table';
+	@import 'section__code';
+	@import 'section__double';
+	@import 'section__shout';
+	@import 'section__cover';
+	@import 'section__place';
+	@import 'section__footer';
+
+	// Modifiers
+
+	@import 'section--grid';
+	@import 'section--black';
+	@import 'section--white';
 
 	}
