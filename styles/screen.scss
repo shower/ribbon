@@ -9,5 +9,16 @@
 @import 'defaults';
 @import 'fonts';
 @import 'reset';
-@import 'shower';
 @import 'print';
+
+@import 'shower/shower';
+@import 'caption/caption';
+@import 'section/section';
+@import 'progress/progress';
+@import 'badge/badge';
+@import 'region/region';
+
+@media screen {
+	@import 'shower/shower--list';
+	@import 'shower/shower--full';
+	}

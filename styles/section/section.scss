@@ -2,7 +2,7 @@
 // Section (Slide)
 // ------------------------------------------------------------------
 
-> section {
+.shower > section {
 
 	position:relative;
 	z-index:1;
@@ -31,17 +31,17 @@
 
 	// Elements
 
-	@import 'section__basic';
-	@import 'section__inline';
-	@import 'section__quote';
-	@import 'section__lists';
-	@import 'section__table';
-	@import 'section__code';
-	@import 'section__double';
-	@import 'section__shout';
-	@import 'section__cover';
-	@import 'section__place';
-	@import 'section__footer';
+	@import 'basic';
+	@import 'inline';
+	@import 'quote';
+	@import 'lists';
+	@import 'table';
+	@import 'code';
+	@import 'double';
+	@import 'shout';
+	@import 'cover';
+	@import 'place';
+	@import 'footer';
 
 	// Modifiers
 

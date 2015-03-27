@@ -1,10 +1,8 @@
 // ------------------------------------------------------------------
-// Section: White
+// Live Region
 // ------------------------------------------------------------------
 
-&.white {
-	background-color:#FFF;
-	&:after {
-		visibility:hidden;
-		}
+.shower__region {
+	@include offscreen;
+	display:block;
 	}

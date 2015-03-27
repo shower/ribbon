@@ -18,19 +18,6 @@
 		text-decoration:none;
 		}
 
-	@import 'caption';
-	@import 'badge';
-	@import 'progress';
-	@import 'section';
-	@import 'live-region';
-
-	// Screen
-
-	@media screen {
-		@import 'shower--list';
-		@import 'shower--full';
-		}
-
 	// Print
 
 	@media print {

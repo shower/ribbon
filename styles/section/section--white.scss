@@ -1,10 +1,13 @@
 // ------------------------------------------------------------------
-// Section: Black
+// Section: White
 // ------------------------------------------------------------------
 
-&.black {
-	background-color:#000;
+&.white {
+
+	background-color:#FFF;
+
 	&:after {
 		visibility:hidden;
 		}
+
 	}

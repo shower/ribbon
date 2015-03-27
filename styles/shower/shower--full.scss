@@ -2,7 +2,7 @@
 // Shower Full
 // ------------------------------------------------------------------
 
-&--full {
+.shower--full {
 
 	position:absolute;
 	top:50%;
@@ -13,8 +13,8 @@
 	height:$height;
 	background:#000;
 
-	@import 'progress--full';
-	@import 'section--full';
-	@import 'live-region--full';
+	@import '../section/section--full';
+	@import '../progress/progress--full';
+	@import '../region/region--full';
 
 	}

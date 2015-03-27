@@ -1,8 +1,13 @@
 // ------------------------------------------------------------------
-// Live Region
+// Content: Next Full
 // ------------------------------------------------------------------
 
-.shower__live-region {
-	@include offscreen;
-	display:block;
+.next {
+
+	visibility:hidden;
+
+	&.active {
+		visibility:visible;
+		}
+
 	}
