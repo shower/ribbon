@@ -29,7 +29,7 @@ $grey:#585A5E;
 // Retina
 
 @mixin retina {
-	@media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) {
+	@media (min-resolution:2dppx) {
 		@content;
 		}
 	}
