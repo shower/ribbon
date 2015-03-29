@@ -40,10 +40,8 @@ $grey:#585A5E;
 	background:
 		linear-gradient(
 			to top,
-			$color,
 			$color #{$width}em,
-			transparent #{$width}em,
-			transparent
+			transparent #{$width}em
 		) repeat-x;
 	}
 
