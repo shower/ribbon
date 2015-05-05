@@ -3,7 +3,7 @@
 // ------------------------------------------------------------------
 // 1. Scale ............ Scaling and size fitting with margin
 // 2. Shadow ........... Shadow, hovered and current outlines
-// 3. Cover ............ Transparent cover blocking interaction
+// 3. Content .......... Interaction in the list mode is disabled
 // ------------------------------------------------------------------
 
 > section {
@@ -43,17 +43,13 @@
 			0 20px 50px rgba(black, 0.3);
 		}
 
-	// Cover
+	// Content
 
-	&:before {
-		position:absolute;
-		top:0;
-		right:0;
-		bottom:0;
-		left:0;
-		z-index:1;
-		content:'';
+	* {
+		pointer-events:none;
 		}
+
+	// Elements
 
 	@import 'footer--list';
 
