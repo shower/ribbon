@@ -2,7 +2,6 @@
 // Defaults
 // ------------------------------------------------------------------
 // 1. Sizes ............ Global layout and color variables
-//    - Ratio .......... Slide ratio. Recommended values: 16/10 or 4/3
 //    - Width .......... Default slide width 1024 px
 //    - Height ......... Height calculated based on width and ratio
 //    - Gap ............ Gap between slides in list mode
@@ -15,7 +14,6 @@
 
 // Sizes
 
-$ratio:16/10;
 $width:1024px;
 $height:$width/$ratio;
 $gap:100px;

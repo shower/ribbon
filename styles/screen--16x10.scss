@@ -1,0 +1,26 @@
+// ------------------------------------------------------------------
+// Ribbon theme for Shower HTML presentation engine
+// Copyright © 2010–2015 Vadim Makeev, http://pepelsbey.net
+// Licensed under MIT license: https://github.com/shower/shower/wiki/MIT-License
+// ------------------------------------------------------------------
+
+@import '../bower_components/breakpoint-sass/stylesheets/breakpoint';
+
+$ratio:16/10;
+
+@import 'defaults';
+@import 'fonts';
+@import 'reset';
+@import 'print';
+
+@import 'shower/shower';
+@import 'caption/caption';
+@import 'section/section';
+@import 'progress/progress';
+@import 'badge/badge';
+@import 'region/region';
+
+@media screen {
+	@import 'shower/shower--list';
+	@import 'shower/shower--full';
+	}

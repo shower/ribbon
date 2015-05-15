@@ -7,19 +7,21 @@ module.exports = function(grunt) {
 		sass: {
 			task: {
 				files: {
-					'styles/screen.css': 'styles/screen.scss'
+					'styles/screen--16x10.css': 'styles/screen--16x10.scss',
+					'styles/screen--4x3.css': 'styles/screen--4x3.scss'
 				}
 			}
 		},
 		autoprefixer: {
 			task: {
-				src: 'styles/screen.css'
+				src: 'styles/*.css'
 			}
 		},
 		cssmin: {
 			task: {
 				files: {
-					'styles/screen.css': 'styles/screen.css'
+					'styles/screen--16x10.css': 'styles/screen--16x10.css',
+					'styles/screen--4x3.css': 'styles/screen--4x3.css'
 				}
 			}
 		},
@@ -29,7 +31,8 @@ module.exports = function(grunt) {
 					banner: '/**\n * <%= pkg.description %>\n * <%= pkg.name %> v<%= pkg.version %>, <%= pkg.homepage %>\n * @copyright 2010–<%= grunt.template.today("yyyy") %> <%= pkg.author.name %>, <%= pkg.author.url %>\n * @license <%= pkg.licenses[0].type %>, <%= pkg.licenses[0].url %>\n */'
 				},
 				files: {
-					'styles/screen.css': 'styles/screen.css'
+					'styles/screen--16x10.css': 'styles/screen--16x10.css',
+					'styles/screen--4x3.css': 'styles/screen--4x3.css'
 				}
 			}
 		},
@@ -44,7 +47,7 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			styles: {
-				files: 'styles/*/*.scss',
+				files: 'styles/**/*.scss',
 				tasks: 'styles'
 			},
 			livereload: {
@@ -55,7 +58,7 @@ module.exports = function(grunt) {
 					'fonts/*',
 					'images/*',
 					'pictures/*',
-					'styles/screen.css',
+					'styles/*.css',
 					'index.html'
 				]
 			}

@@ -2,7 +2,7 @@
 !fonts/**
 !images/**
 !pictures/**
-!styles/screen.css
+!styles/*.css
 !index.html
 !License.md
 !Readme.md
