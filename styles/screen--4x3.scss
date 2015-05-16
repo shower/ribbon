@@ -8,19 +8,22 @@
 
 $ratio:4/3;
 
-@import 'defaults';
-@import 'fonts';
-@import 'reset';
-@import 'print';
+@import
+	'defaults',
+	'fonts',
+	'reset',
+	'print';
 
-@import 'shower/shower';
-@import 'caption/caption';
-@import 'section/section';
-@import 'progress/progress';
-@import 'badge/badge';
-@import 'region/region';
+@import
+	'shower/shower',
+	'caption/caption',
+	'section/section',
+	'progress/progress',
+	'badge/badge',
+	'region/region';
 
 @media screen {
-	@import 'shower/shower--list';
-	@import 'shower/shower--full';
+	@import
+		'shower/shower--list',
+		'shower/shower--full';
 	}
