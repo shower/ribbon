@@ -17,7 +17,7 @@
 
 	@mixin scale-padding($scale) {
 		$scaled-gap:$gap / $scale;
-		padding:$scaled-gap ($scaled-gap * 2) ($scaled-gap * 1.125) $scaled-gap;
+		padding:$scaled-gap ($scaled-gap * 2) $scaled-gap $scaled-gap;
 		}
 
 	@include scale-padding(4);
