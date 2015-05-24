@@ -28,7 +28,7 @@ module.exports = function(grunt) {
 		usebanner: {
 			task: {
 				options: {
-					banner: '/**\n * <%= pkg.description %>\n * <%= pkg.name %> v<%= pkg.version %>, <%= pkg.homepage %>\n * @copyright 2010–<%= grunt.template.today("yyyy") %> <%= pkg.author.name %>, <%= pkg.author.url %>\n * @license <%= pkg.licenses[0].type %>, <%= pkg.licenses[0].url %>\n */'
+					banner: '/**\n * <%= pkg.description %>\n * <%= pkg.name %> v<%= pkg.version %>, <%= pkg.homepage %>\n * @copyright 2010–<%= grunt.template.today("yyyy") %> <%= pkg.author.name %>, <%= pkg.author.url %>\n * @license <%= pkg.license %>\n */'
 				},
 				files: {
 					'styles/screen--16x10.css': 'styles/screen--16x10.css',
