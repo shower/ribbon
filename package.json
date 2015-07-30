@@ -27,14 +27,9 @@
     "theme"
   ],
   "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-autoprefixer": "^2.3.0",
-    "gulp-concat-util": "^0.5.2",
-    "gulp-cssmin": "^0.1.7",
-    "gulp-csso": "^1.0.0",
-    "gulp-load-plugins": "^0.10.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.0.1",
-    "load-grunt-tasks": "^3.1.0"
+    "cssnano": "^2.1.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-sass": "^2.0.4"
   }
 }
