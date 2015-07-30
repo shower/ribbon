@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
 	sass = require('gulp-sass'),
-	autoprefixer = require('gulp-autoprefixer');
+	autoprefixer = require('gulp-autoprefixer'),
+	cssmin = require('gulp-cssmin');
 
 var pkg = require('./package.json');
 var banner = [
@@ -16,6 +17,7 @@ gulp.task('default', function () {
 	return gulp.src('styles/screen--*.scss')
 		.pipe(sass())
 		.pipe(autoprefixer())
+		.pipe(cssmin())
 		.pipe(gulp.dest('styles/'));
 });
 
