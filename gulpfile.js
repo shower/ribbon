@@ -1,7 +1,6 @@
 var gulp = require('gulp'),
 	sass = require('gulp-sass'),
-	autoprefixer = require('gulp-autoprefixer'),
-	cssnano = require('cssnano');
+	autoprefixer = require('gulp-autoprefixer');
 
 var pkg = require('./package.json');
 var banner = [
