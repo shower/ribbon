@@ -14,12 +14,7 @@
   "bugs": {
     "url": "http://github.com/shower/shower/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/shower/shower/wiki/MIT-License"
-    }
-  ],
+  "license": "MIT",
   "keywords": [
     "shower",
     "presentation",
@@ -29,6 +24,7 @@
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
+    "gulp-cssmin": "^0.1.7",
     "gulp-sass": "^2.0.4"
   }
 }
