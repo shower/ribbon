@@ -26,10 +26,9 @@ The easiest way to use Ribbon theme is to download Shower template: [shower.zip]
 
 If you want to build your own theme based on Ribbon you need to set up development environment based on Node.js and Grunt.
 
-1. Make sure you have [Git](http://git-scm.com/), [Node.js](http://nodejs.org/), [Grunt](http://gruntjs.com/getting-started#installing-the-cli) and [bower](http://bower.io/) installed
-2. [Fork Ribbon repository](https://github.com/shower/ribbon/fork), clone your fork to a local computer
-3. Run `npm install` and `bower install` to get all dependencies
-4. Runt `grunt` to start local server with watcher and livereload
+1. [Fork Ribbon repository](https://github.com/shower/ribbon/fork), clone your fork to a local computer
+2. Run `npm install` and `bower install` to get all dependencies
+3. Runt `gulp` to start local server with watcher
 5. Edit theme, mostly SCSS files inside `styles` folder
 
 ---
