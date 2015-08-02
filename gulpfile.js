@@ -24,7 +24,12 @@ var banner = `/**
 gulp.task('default', ['styles'], function() {
 	sync.init({
 		notify: false,
-		server: './'
+		server: {
+			baseDir: './',
+			routes: {
+				'/shower-core': '../shower-core'
+			}
+		}
 	});
 
 	gulp.watch('styles/**/*.scss', ['styles']);
