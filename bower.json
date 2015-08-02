@@ -13,8 +13,8 @@
     "!pictures/**",
     "!styles/*.css",
     "!index.html",
-    "!License.md",
-    "!Readme.md",
+    "!LICENSE.md",
+    "!README.md",
     "!bower.json"
   ],
   "keywords": [
