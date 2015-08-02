@@ -1,29 +1,14 @@
 // ------------------------------------------------------------------
-// Ribbon theme for Shower HTML presentation engine
-// Copyright © 2010–2015 Vadim Makeev, http://pepelsbey.net
-// Licensed under MIT license: https://github.com/shower/shower/wiki/MIT-License
+// Screen 4:3
+// ------------------------------------------------------------------
+// 1. Ratio ............ Regular screen 16:10 ratio setup
+// 2. Import ........... Import of all files modified by $ratio
 // ------------------------------------------------------------------
 
-@import '../bower_components/breakpoint-sass/stylesheets/breakpoint';
+// Ratio
 
 $ratio:4/3;
 
-@import
-	'defaults',
-	'fonts',
-	'reset',
-	'print';
+// Import
 
-@import
-	'shower/shower',
-	'caption/caption',
-	'section/section',
-	'progress/progress',
-	'badge/badge',
-	'region/region';
-
-@media screen {
-	@import
-		'shower/shower--list',
-		'shower/shower--full';
-	}
+@import 'screen';
