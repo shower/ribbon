@@ -4,16 +4,10 @@
 
 &.grid {
 
-	background-image:
-		url(../images/grid.png),
-		url(../images/guides.png);
+	background-image:url(../images/grid.png);
 	@include retina {
-		background-image:
-			url(../images/grid@2x.png),
-			url(../images/guides@2x.png);
-		background-size:
-			25px,
-			$width auto;
+		background-image:url(../images/grid@2x.png);
+		background-size:$width auto;
 		}
 
 	// Crisp guides
