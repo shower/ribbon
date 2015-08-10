@@ -33,15 +33,14 @@ ol, ul {
 // Markers
 
 ul > li:before {
-	// Bullet
-	content:'\2022\00A0\00A0';
+	padding-right:0.5em;
+	content:'•';
 	}
 ul > li:lang(ru):before {
-	// Mdash
-	content:'\2014\00A0\00A0';
+	content:'—';
 	}
 ol > li:before {
-	// Number
+	padding-right:0.4em;
 	counter-increment:list;
-	content:counter(list)'.\00A0';
+	content:counter(list)'.';
 	}
