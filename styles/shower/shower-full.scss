@@ -2,7 +2,7 @@
 // Shower Full
 // ------------------------------------------------------------------
 
-.shower--full {
+.shower.full {
 
 	position:absolute;
 	top:50%;
@@ -17,8 +17,12 @@
 
 	clip:rect(0, auto, auto, 0);
 
-	@import '../section/section--full';
-	@import '../progress/progress--full';
-	@import '../region/region--full';
+	// Elements
+
+	@import '../caption/caption-list';
+	@import '../slide/slide-full';
+	@import '../progress/progress-full';
+	@import '../badge/badge-list';
+	@import '../region/region-full';
 
 	}

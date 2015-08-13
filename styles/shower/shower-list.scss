@@ -2,7 +2,7 @@
 // Shower List
 // ------------------------------------------------------------------
 
-.shower--list {
+.shower.list {
 
 	padding:0 0 7px 7px;
 	width:100%;
@@ -17,8 +17,10 @@
 
 	// Elements
 
-	@import '../caption/caption--list';
-	@import '../section/section--list';
-	@import '../badge/badge--list';
+	@import '../caption/caption-list';
+	@import '../slide/slide-list';
+	@import '../progress/progress-list';
+	@import '../badge/badge-list';
+	@import '../region/region-list';
 
 	}

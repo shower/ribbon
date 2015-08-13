@@ -9,13 +9,12 @@
 @import
 	'shower/shower',
 	'caption/caption',
-	'section/section',
+	'slide/slide',
 	'progress/progress',
-	'badge/badge',
-	'region/region';
+	'badge/badge';
 
 @media screen {
 	@import
-		'shower/shower--list',
-		'shower/shower--full';
+		'shower/shower-list',
+		'shower/shower-full';
 	}

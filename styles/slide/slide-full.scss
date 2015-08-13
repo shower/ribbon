@@ -2,7 +2,7 @@
 // Section Full
 // ------------------------------------------------------------------
 
-> section {
+.slide {
 
 	position:absolute;
 	top:0;
@@ -17,7 +17,7 @@
 
 	// Elements
 
-	@import 'next--full';
-	@import 'shout--full';
+	@import 'elements/next-full';
+	@import 'elements/shout-full';
 
 	}

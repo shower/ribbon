@@ -6,7 +6,7 @@
 // 3. Content .......... Interaction in the list mode is disabled
 // ------------------------------------------------------------------
 
-> section {
+.slide {
 
 	// Scale
 
@@ -43,8 +43,6 @@
 		pointer-events:none;
 		}
 
-	// Elements
-
-	@import 'footer--list';
+	@import 'content/footer-list';
 
 	}
