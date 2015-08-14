@@ -1,52 +1,41 @@
 // ------------------------------------------------------------------
 // Caption
 // ------------------------------------------------------------------
-// 1. Breakpoints ........ Breakpoints for the font-size
-// 2. Contents ........... Content elements
+// 1. Calculations ..... Font-size calculations
+// 2. Decoration ....... Global caption styling
+// 3. Contents ......... Caption’s contents
 // ------------------------------------------------------------------
 
 .caption {
 
-	display:block;
+	// Calculations
+
+	@each $scale in 4, 2, 1 {
+		@include scale-breakpoint($scale) {
+			font-size:100px / $scale;
+			}
+		}
+
+	// Decoration
+
+	padding:0.92em 1em 0.93em;
 	width:100%;
 	color:#3C3D40;
 	text-shadow:0 1px 0 #8D8E90;
-	font-size:20px;
-
-	// Breakpoints
-
-	@mixin scale-padding($scale) {
-		$scaled-gap:$gap / $scale;
-		padding:$scaled-gap ($scaled-gap * 2) $scaled-gap $scaled-gap;
-		}
-
-	@include scale-padding(4);
-
-	@include scale-breakpoint(2) {
-		@include scale-padding(2);
-		font-size:30px;
-		}
-	@include scale-breakpoint(1) {
-		@include scale-padding(1);
-		font-size:50px;
-		}
 
 	// Contents
 
 	h1 {
-		margin-bottom:0.25em;
-		font:bold 2em/1 PT Sans Narrow, sans-serif;
+		padding-bottom:0.15em;
+		font:bold 1em/1 PT Sans Narrow, sans-serif;
 		}
 	p {
 		line-height:1;
-		font-size:1em;
+		font-size:0.6em;
 		}
 	a {
 		text-shadow:0 -1px 0 #1F3F60;
 		background:none;
-		&:hover {
-			color:lighten($blue, 5%);
-			}
 		}
 
 	}
