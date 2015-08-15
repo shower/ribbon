@@ -13,7 +13,7 @@
 	transform-origin:0 0;
 
 	@each $scale in 4, 2, 1 {
-		@include scale-breakpoint($scale) {
+		@include scale($scale) {
 			$magic:1 - 1 / $scale;
 			margin:0 (0 - $width * $magic) ($gap / $scale - $height * $magic) $gap / $scale;
 			transform:scale(1 / $scale);
