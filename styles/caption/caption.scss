@@ -12,7 +12,7 @@
 
 	@each $scale in 4, 2, 1 {
 		@include scale($scale) {
-			font-size:100px / $scale;
+			font-size:$gap / $scale;
 			}
 		}
 
