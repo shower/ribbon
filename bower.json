@@ -22,5 +22,8 @@
     "presentation",
     "ribbon",
     "theme"
-  ]
+  ],
+  "devDependencies": {
+    "breakpoint-sass": "~2.6.1"
+  }
 }
