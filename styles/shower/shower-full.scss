@@ -15,8 +15,9 @@
 
 	// Elements
 
-	@import '../slide/slide-full';
-	@import '../progress/progress-full';
-	@import '../region/region-full';
+	@import
+		'../slide/slide-full',
+		'../progress/progress-full',
+		'../region/region-full';
 
 	}
