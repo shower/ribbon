@@ -50,7 +50,7 @@ $grey:#585A5E;
 		@content;
 		}
 	@else {
-		@include breakpoint(2 * ($width / $scale) + ($gap / $scale) * 3) {
+		@media (min-width:2 * ($width / $scale) + ($gap / $scale) * 3) {
 			@content;
 			}
 		}
