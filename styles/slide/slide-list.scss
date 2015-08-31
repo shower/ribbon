@@ -2,8 +2,8 @@
 // Section List
 // ------------------------------------------------------------------
 // 1. Scale ............ Scaling and size fitting with margin
-// 2. Shadow ........... Shadow, hovered and current outlines
-// 3. Content .......... Interaction in the list mode is disabled
+// 2. Outline .......... Shadow, hovered and current states
+// 3. Content .......... Disabled slide content in List mode
 // ------------------------------------------------------------------
 
 .slide {
@@ -20,7 +20,7 @@
 			}
 		}
 
-	// Shadow
+	// Outline
 
 	border-radius:2px;
 	box-shadow:0 20px 50px rgba(black, 0.3);
