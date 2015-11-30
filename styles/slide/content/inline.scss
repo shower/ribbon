@@ -14,11 +14,10 @@ i, em, dfn {
 	}
 code, kbd, mark, samp {
 	padding:0.1em 0.3em;
-	border-radius:0.4em;
+	border-radius:0.2em;
 	}
-kbd, code, samp {
-	background:rgba($grey, 0.15);
-	color:#000;
+code, kbd, samp {
+	background:$grey-back;
 	line-height:1;
 	font-family:PT Mono, monospace, monospace;
 	}
