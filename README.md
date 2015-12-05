@@ -1,35 +1,39 @@
 # Ribbon theme for Shower
 
-Follow [@shower_me](https://twitter.com/shower_me) for support and updates, [file an issue](https://github.com/shower/shower/issues) in case of any problem. Part of the [Shower](https://github.com/shower/shower/) presentation template, [see wiki](https://github.com/shower/shower/wiki) for more information.
+Default theme for the [Shower](https://github.com/shower/shower/) presentation engine. Doesn’t include engine itself. [See it in action](http://shwr.me/shower/themes/ribbon/). Follow [@shower_me](https://twitter.com/shower_me) for support and updates.
 
-[Ribbon theme for Shower in action](http://shwr.me/shower/themes/ribbon/).
+## Usage
 
-## Using theme
+Get the Shower template where Ribbon is already included. Download the template archive or install the package:
 
-The easiest way to use Ribbon theme is to download Shower template: [shower.zip](shwr.me/shower.zip) (1.2 MB). There are two built-in themes: Ribbon and Bright. But if you want to keep theme up to date it’s better to use [bower](http://bower.io/) or [npm](https://www.npmjs.org/) package managers.
+	npm install shower
 
-### bower
+If you want to install Ribbon separately you can download the theme archive or install the package:
 
-1. Make sure you have [Node.js](http://nodejs.org/) installed, [install bower](http://bower.io/#install-bower) as well
-2. Run `bower install shower-ribbon`
-3. Link theme files from `bower_components/shower-ribbon` to your presentation
-4. There’s `index.html` file inside demonstrating all Ribbon features
+	npm install shower-ribbon
 
-### npm
+## Features
 
-1. Make sure you have [Node.js](http://nodejs.org/) installed
-2. Run `npm install shower-ribbon`
-3. Link theme files from `node_modules/shower-ribbon` to your presentation
-4. There’s `index.html` file inside demonstrating all Ribbon features
+All theme’s features are demonstrated in the `index.html` file. Use it as a reference while building your presentation. See more detailed [features overview](docs/features.md).
 
-## Customizing theme
+## Ratios
 
-If you want to build your own theme based on Ribbon you need to set up development environment based on Node.js and Grunt.
+Ribbon theme supports two slide ratios: wide 16×10 (default) and taller 4×3. To change the slide’s ratio include one of the pre-built `screen-16x10.css` or `screen-4x3.css` files in the `<head>` of your presentation.
 
-1. [Fork Ribbon repository](https://github.com/shower/ribbon/fork), clone your fork to a local computer
-2. Run `npm install` and `bower install` to get all dependencies
-3. Runt `gulp` to start local server with watcher
-5. Edit theme, mostly SCSS files inside `styles` folder
+## PDF
+
+Ribbon could be exported to PDF by printing it from the list mode in Chrome or Opera browsers. See [printing documentation](docs/printing.md) for more options.
+
+## Development
+
+If you want to adjust theme for your needs:
+
+1. Fork this repository and clone it to your local machine.
+2. Install dependencies: `npm install`.
+3. Start a local server with watcher: `npm run server` or just `gulp` if you have it installed globally.
+4. Edit your files and see changes in the opened browser.
+
+To take part in Ribbon development please read [contributing guidelines](CONTRIBUTING.md) first and [file an issue](https://github.com/shower/ribbon/issues/new) before sending any pull request.
 
 ---
-Licensed under [MIT License](http://en.wikipedia.org/wiki/MIT_License), see [license page](https://github.com/shower/shower/wiki/MIT-License) for details.
+Licensed under [MIT License](LICENSE.md).
