@@ -6,7 +6,7 @@
 
 	@each $scale in 4, 2, 1 {
 		@include scale($scale) {
-			padding-top:$gap / $scale;
+			padding:($gap / $scale) ($gap / $scale) 0 0;
 			}
 		}
 
