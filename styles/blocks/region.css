@@ -7,18 +7,6 @@
     clip: rect(0 0 0 0);
 }
 
-/* List */
-
-.shower.list .region {
-    display: none;
-}
-
-/* Full */
-
-.shower.full .region {
-    display: block;
-}
-
 /* Print */
 
 @media print {
