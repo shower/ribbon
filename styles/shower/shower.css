@@ -6,6 +6,8 @@
 @import 'shower-print.css' print;
 
 .shower {
+    --shower-back-color: #585a5e;
+
     --slide-gap: 100px;
     --slide-ratio: calc(16 / 9);
     --slide-width: 1024px;
@@ -13,6 +15,9 @@
         var(--slide-width) / var(--slide-ratio)
     );
     --slide-side: 100px;
+
+    --slide-back-color: white;
+    --slide-text-color: black;
 
     --color-blue: #4b86c2;
     --color-blue-lighter: #6799cb;
@@ -30,7 +35,6 @@
     -ms-text-size-adjust: none;
 
     margin: 0;
-    color: black;
     counter-reset: slide;
     font: 25px/2 'PT Sans', sans-serif;
 }
