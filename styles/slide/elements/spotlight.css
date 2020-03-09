@@ -18,24 +18,3 @@
         );
     pointer-events: none;
 }
-
-/* .spotlight {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    pointer-events: none;
-    display: flex;
-}
-
-.spotlight::before {
-    position: relative;
-    display: block;
-    margin: auto;
-    width: 256px;
-    height: 256px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.2);
-    content: '';
-} */
